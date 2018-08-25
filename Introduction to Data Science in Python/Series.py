@@ -9,7 +9,7 @@ pd.Series(numbers)
 animals = ['tiger','Bear',None]
 pd.Series(animals) #it will gives the second item "None". So it seems as if 'None' is a values
 numbers1 = [1,2,None]
-pd.series(numbers1)#it will return the second item 'NaN'
+pd.Series(numbers1)#it will return the second item 'NaN'
 
 # And we could also convert a dictionary to a Series
 sports = {'Archery':'Bhutan','Golf':'Scotland','Soccer':'Japan'}
@@ -19,3 +19,4 @@ s.index # return the indexes of the series
 
 #This is actually the same if we construct the Series directly
 s = pd.Series(['tiger','bear','lion'],index=['India','China','Japan'])
+print(s)
