@@ -28,3 +28,13 @@ except:
     #list comprehension
     my_list = [number for number in range(100) if number%2 == 0]
     print(my_list)
+
+#Excercise 3:
+def times_tables():
+    lst = []
+    for i in range(10):
+        for j in range (10):
+            lst.append(i*j)
+    return lst
+
+times_tables() == [i*j for i in range(10) for j in range(10)]
