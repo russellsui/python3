@@ -6,7 +6,17 @@ class Person:
         self.location = newlo
 
 ####### map function
-store1 =[10,11,12,12,15]
-store2 =[12,123,3214,5234]
-cheapset = map(min,store1,store2)
-print(type(cheapset))
+store1 = [1,2,3,3,5]
+store2 = [2312,4123,123123,1]
+mape = map(min,store1,store2)
+print(type(mape))
+
+### Exercise
+people = ['Dr. Christopher Brooks','Dr. Kevym Collins-Thompson','Dr. VG Vinod Vydiswaran'
+,'Dr.Daniel Romero']
+
+def split_title_and_name(person):
+    words = person.split()
+    return words[0]+words[1]
+
+list(map(split_title_and_name,people))
