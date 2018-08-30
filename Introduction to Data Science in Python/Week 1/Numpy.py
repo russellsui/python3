@@ -14,7 +14,7 @@ array4 = np.ones(3,5)
 array5 = np.eye(3)
 
 #repear array
-np.repeat([1,2,3],3)
+np.repeat([1,2,3],3)# this gives us array([1,1,1,2,2,2,3,3,3])
 
 ##########
 ### Operations
@@ -37,6 +37,11 @@ x.mean()
 x.std()
 x.argmax()
 x.argmin()
+
+# arange function gives back an array from 0 to n-1
+s = np.arange(13)
+ss = s ** 2
+print(ss)
 
 #########################################################
 ######### Part II: Indexing/Slicing
@@ -74,3 +79,13 @@ for row in test:
     print(row)
 for i in range(len(test)):
     print(test[i])
+
+# enumerate function could give us the row and index of the row
+for i,row in enumerate(test):
+    print('row',i,'is',row)
+test2 = test ** 2
+
+# iterate in both arrays, use zip function
+for i,j in zip(test,test2):
+    print(i,'+',j,'=',i+j)
+    
