@@ -14,12 +14,14 @@ costs
 # reading data from csv files, just like R
 df = pd.read_csv('olympics.csv')
 df.head()# show the first several rows
-# the following syntaxes will skip the first column of ordinal indexes and the first rows of Nans
+# the following syntaxes will set the first row as column names and the No.0 column as indexes
 df = pd.read_csv('olympic.csv', index_col = 0, skiprows = 1)
 df.head()
 # get the column names by using columns function
 df.columns
 # An example on renaming columns
+# df.rename(columns=dict)
+# here dict = {col: ....} then the columns will be rename as ....
 for col in df.columns:
     if col[:2] == '01':
         df.rename(columns={col:'Gold'+col[4:]}, inplace = True)

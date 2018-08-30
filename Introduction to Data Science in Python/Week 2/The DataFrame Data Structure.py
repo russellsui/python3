@@ -30,7 +30,7 @@ df.loc['Store 1', 'Cost']
 df.loc['Store 1']['Cost']
 # select some columns from the table using slicing
 df.loc[:,['Name','Cost']]
-# drop some rows using drop function
+# drop some rows using drop function, like changing the df in its view,but does not change the original df
 df.drop['Store 1']
 # this dropping just changes a copy of the original dataframe so the original dataframe does not actually changes
 copy_df = df.copy()
